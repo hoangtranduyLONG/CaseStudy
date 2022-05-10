@@ -5,11 +5,12 @@ public class SinhVien implements Comparable<SinhVien>{
     private String hoVaTen;
     private int namSinh;
     private float diemTrungBinh;
-
+    private String status = "" ;
 
     public SinhVien(String maSinhVien) {
         this.maSinhVien = maSinhVien;
     }
+
 
     public SinhVien(String maSinhVien, String hoVaTen, int namSinh, float diemTrungBinh) {
         this.maSinhVien = maSinhVien;
@@ -54,8 +55,8 @@ public class SinhVien implements Comparable<SinhVien>{
 
     @Override
     public String toString() {
-        return "SinhVien [maSinhVien=" + maSinhVien + ", hoVaTen=" + hoVaTen + ", namSinh=" + namSinh
-                + ", diemTrungBinh=" + diemTrungBinh + "]";
+        return "SinhVien maSinhVien=" + maSinhVien + ", hoVaTen=" + hoVaTen + ", namSinh=" + namSinh
+                + ", diemTrungBinh=" + diemTrungBinh ;
     }
 
     @Override

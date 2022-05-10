@@ -5,39 +5,34 @@ import java.util.ArrayList;
         import java.util.Comparator;
 
 public class DanhSachSinhVien {
-    private ArrayList<SinhVien> danhSach;
+     ArrayList<SinhVien> danhSach;
 
     public DanhSachSinhVien() {
         this.danhSach = new ArrayList<SinhVien>();
+
+    }
+
+    public ArrayList<SinhVien> getDanhSach() {
+        return danhSach;
     }
 
     public DanhSachSinhVien(ArrayList<SinhVien> danhSach) {
         this.danhSach = danhSach;
     }
-
-
     public void themSinhVien(SinhVien sv) {
         this.danhSach.add(sv);
     }
-
-
     public void inDanhSachSinhVien() {
         for (SinhVien sinhVien : danhSach) {
             System.out.println(sinhVien);
         }
     }
-
-
     public boolean kiemTraDanhSachRong() {
         return this.danhSach.isEmpty();
     }
-
-
     public int laySoLuongSinhVien() {
         return this.danhSach.size();
     }
-
-
     public void lamRongDanhSach() {
         this.danhSach.removeAll(danhSach);
     }
